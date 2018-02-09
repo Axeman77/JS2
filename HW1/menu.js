@@ -9,7 +9,7 @@ Container.prototype.render = function() {
     div.classList.add(this.className);
 
     return div;
-}
+};
 
 function Menu(_id, _class, _items) {
     Container.call(this);
@@ -33,7 +33,7 @@ Menu.prototype.render = function() {
     }
 
     return ul;
-}
+};
 
 function MenuItem(href, label) {
     Container.call(this);
