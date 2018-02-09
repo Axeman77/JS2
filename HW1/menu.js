@@ -53,4 +53,13 @@ MenuItem.prototype.render = function() {
     li.appendChild(a);
 
     return li;
-}
+};
+
+// Метод remove для удаления контейнера
+
+Menu.prototype.remove = function ( i ) {
+    var elem = document.getElementById( this.id ),
+        item = document.getElementsByTagName( 'li' );
+
+    elem.removeChild( item[ i ] );
+};
