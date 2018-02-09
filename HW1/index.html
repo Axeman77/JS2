@@ -5,6 +5,19 @@
   <title>HW1</title>
 </head>
 <body>
-
+  <script src="menu.js"></script>
+  <script>
+      window.onload = function() {
+          var item1 = new MenuItem('/', 'Главная');
+          var item2 = new MenuItem('/catalog', 'Каталог');
+          var item3 = new MenuItem('/about', 'О нас');
+  
+          var menu = new Menu('menu', 'menu', [
+              item1, item2, item3
+          ]);
+  
+          document.body.appendChild(menu.render());
+      }
+  </script>
 </body>
 </html>
