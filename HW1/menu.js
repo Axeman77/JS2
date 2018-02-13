@@ -9,7 +9,7 @@ Container.prototype.render = function() {
     div.classList.add(this.className);
 
     return div;
-}
+};
 
 function Menu(_id, _class, _items) {
     Container.call(this);
@@ -33,7 +33,7 @@ Menu.prototype.render = function() {
     }
 
     return ul;
-}
+};
 
 function MenuItem(href, label) {
     Container.call(this);
@@ -53,4 +53,13 @@ MenuItem.prototype.render = function() {
     li.appendChild(a);
 
     return li;
-}
+};
+
+// Метод remove для удаления контейнера
+
+Menu.prototype.remove = function ( i ) {
+    var elem = document.getElementById( this.id ),
+        item = document.getElementsByTagName( 'li' );
+
+    elem.removeChild( item[ i ] );
+};
