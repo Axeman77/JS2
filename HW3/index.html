@@ -1,65 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
-  <div class="container">
-    <div class="header">
-      <header>
-        <div class="logo">
-          <a href="index.html"><img src="img/logo.jpg" alt="TIME.RU" title="TIME.RU">
-            <p>Time.ru</p>
-          </a>
-        </div>
-        <hr>
-        <ul class="menu">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-      </header>
-    </div>
-    <hr>
-    <h1 class="form">Напишите нам</h1>
-    <form action="http://time.ru" method="post">
-      <legend>Контактные данные</legend>
-      <p>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <!--<script type="text/javascript" src="script.js"></script>-->
+    <title>PCRE</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Эта страница будет проверяться самым тщательным образом при помощи PCRE</h1>
+      <p class="txt" id="txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi deserunt qui rerum sint temporibus.
+        Architecto, aut beatae commodi cumque deleniti dignissimos earum esse eum eveniet ex excepturi expedita
+        explicabo fuga ipsum iste iusto laboriosam, maxime minus modi molestiae natus nostrum nulla odio pariatur
+        perferendis praesentium provident qui quibusdam quidem quos recusandae repellat saepe sequi similique sit velit
+        voluptate? Ab aliquid aut, ex, ipsa necessitatibus perferendis perspiciatis similique sint temporibus velit
+        veniam vitae! 'Eveniet, natus, neque?' A ab accusamus accusantium assumenda at atque commodi deserunt dicta est
+        eum, hic id illo illum ipsum iste molestiae molestias nam non officia omnis quam quas quidem quo repellendus,
+        sapiente sit, veniam. At delectus doloribus facilis harum, nisi perferendis placeat praesentium voluptatem.
+        Aliquam aliquid culpa deleniti? Dolorem, earum iure magnam reiciendis rem sint tempore veritatis vero?
+        Ad alias architecto, expedita fuga possimus reiciendis sequi sit ullam vitae. Accusantium, aspernatur beatae
+        dolor eaque est eum excepturi expedita illum ipsam, magnam magni modi molestiae mollitia nihil non obcaecati
+        officiis omnis perferendis qui quibusdam quos saepe sapiente tempora tempore totam voluptates voluptatibus!
+        'Ad aliquam, architecto aspernatur consequuntur corporis cum, esse facere fugiat inventore ipsa magnam maxime
+        nam natus non numquam odio officiis optio porro quaerat unde ut vel?' This is Oleg's car. I'm a doctor.</p>
+      <form action="http://time.ru" method="post">
+        <legend>Контактные данные</legend>
+        <br>
+        <p>
         <label for="user_name">Имя:</label>
-        <input class="input_field" type="text" name="name" id="user_name" />
-      </p>
-      <p>
-        <label for="user_email">email:</label>
-        <input class="input_field" type="text" name="email" id="user_email" />
-      </p>
-      <p>
-        <label for="user_theme">Тема:</label>
-        <input class="input_field" type="text" name="theme" id="user_theme" />
-      </p>
-      <p>
-        <label for="user_text">Текстовое поле:</label>
-        <textarea name="text" id="user_text" cols="30" rows="10"></textarea>
-      </p>
-      <p>
-        <input type="submit" value="отправить" />
-      </p>
-    </form>
-    <div class="contacts">
-      <h2>Адрес</h2>
-      <ul>
-        <li>Телефон:&nbsp+7(495)123-45-67</li>
-        <li>Адрес:&nbsp119991, Москва, 5-ый Донской проезд, 15, стр.1, оф.205</li>
-        <li>email для связи:&nbspinfo@time.ru</li>
-      </ul>
-      <a href="https://yandex.ru/maps/?um=constructor%3A126d5770a34e909b2877148c2ca8bf7f98381c983e5823764fd20f202e6c07d6&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A126d5770a34e909b2877148c2ca8bf7f98381c983e5823764fd20f202e6c07d6&amp;width=500&amp;height=400&amp;lang=ru_RU" alt="" style="border: 0;" /></a>
-
+        <input type="text" name="name" id="user_name" />
+        </p>
+        <p>
+          <label for="user_name">Телефон:</label>
+          <input type="text" name="phone" id="user_phone" />
+        </p>
+        <p>
+          <label for="user_email">e-mail:</label>
+          <input type="text" name="email" id="user_email" />
+        </p>
+        <p>
+          <label for="user_text">Текстовое поле:</label>
+          <textarea name="text" id="user_text" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+          <input type="submit" value="отправить" />
+        </p>
+      </form>
     </div>
-    <div class="footer">
-      <footer>
-        <hr> Все права защищены &copy
-      </footer>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
