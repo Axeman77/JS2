@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <!--<script type="text/javascript" src="script.js"></script>-->
+    <script type="text/javascript" src="script.js"></script>
     <title>PCRE</title>
   </head>
   <body>
@@ -23,27 +23,31 @@
         officiis omnis perferendis qui quibusdam quos saepe sapiente tempora tempore totam voluptates voluptatibus!
         'Ad aliquam, architecto aspernatur consequuntur corporis cum, esse facere fugiat inventore ipsa magnam maxime
         nam natus non numquam odio officiis optio porro quaerat unde ut vel?' This is Oleg's car. I'm a doctor.</p>
-      <form action="http://time.ru" method="post">
+      <form action="#" method="post">
         <legend>Контактные данные</legend>
         <br>
         <p>
         <label for="user_name">Имя:</label>
         <input type="text" name="name" id="user_name" />
+        <div id="err_name">Ошибка, введите имя</div>
         </p>
         <p>
-          <label for="user_name">Телефон:</label>
+          <label for="user_phone">Телефон:</label>
           <input type="text" name="phone" id="user_phone" />
+        <div id="err_phone">Ошибка, введите телефон в формате +7(000)000-0000</div>
         </p>
         <p>
           <label for="user_email">e-mail:</label>
           <input type="text" name="email" id="user_email" />
+        <div id="err_email">Ошибка, введите email в формате mymail@mail.ru, или my.mail@mail.ru, или my-mail@mail.ru</div>
         </p>
         <p>
           <label for="user_text">Текстовое поле:</label>
           <textarea name="text" id="user_text" cols="30" rows="10"></textarea>
+        <div id="err_text">Ошибка, введите любые символы, кроме пробела</div>
         </p>
         <p>
-          <input type="submit" value="отправить" />
+          <input type="submit" id="submit" value="Проверим?" />
         </p>
       </form>
     </div>

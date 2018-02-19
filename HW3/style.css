@@ -106,3 +106,23 @@ input.red {
     box-shadow: 0 0 15px rgba(250, 0, 133, 0.5);
     outline: none;
 }
+
+#err_name {
+    display: none;
+    font-size: 0.7em;
+}
+
+#err_phone {
+    display: none;
+    font-size: 0.7em;
+}
+
+#err_email {
+    display: none;
+    font-size: 0.7em;
+}
+
+#err_text {
+    display: none;
+    font-size: 0.7em;
+}
