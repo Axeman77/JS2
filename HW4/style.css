@@ -1,6 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 30px;
+}
+
+.tabs {
+    max-width: 700px;
+    margin: 0 0 30px;
+}
+
+.tabs__caption {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+li {
+    padding: 9px 15px;
+    margin: 1px 0 0 1px;
+    background: #61AF6A;
+    color: #FFF;
+    position: relative;
+    border: solid #61AF6A;
+    border-width: 2px 2px 0;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+}
+
 .tabs__content {
+    border: 2px solid #7DCA86;
+    border-radius: 0 5px 5px 5px;
+    padding: 7px 15px;
     display: none; /* по умолчанию прячем все блоки */
 }
-.tabs__content.active {
+
+.active {
+    background: #FFF;
+    color: #000;
+    border-color: #7DCA86;
     display: block; /* по умолчанию показываем нужный блок */
 }
+
