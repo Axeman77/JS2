@@ -1,9 +1,14 @@
-(function ($) {
+(function ($) { // Ждём загрузки страницы
     $(function () {
-       $('.tabs__caption').on('click', 'li', function (event) {
-           $('ul.tabs__caption').on('click', 'li', function() {
-               $(this).toggleClass('active');
-           })
+       $('.tabs__caption').on('click', 'li', function (event) { // Событие нажатия на элемент меню вкладок(используем всплытие до родителя)
+           if (!$(this).hasClass("active")) { // Проверка, не нажали ли мы на уже активный пункт
+               var i = $(this).index(); // Получаем порядковый номер нажатого пункта
+
+               $(".tabs__caption li.active").removeClass("active"); // Удаляем активный класс у прошлого пункта меню
+               $(this).addClass('active'); // Добавляем нажатому пункту меню активный класс
+               $($(".tabs__content")[i]).fadeIn(1000).addClass("active"); // Показываем и добавляем активный класс соответствующему контейнеру
+               $(".tabs__content.active").fadeOut(1000).removeClass("active"); // Скрываем и удаляем активный класс у прошлого контейнера с содержимым
+           }
        });
     });
 })(jQuery);

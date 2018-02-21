@@ -16,10 +16,33 @@
     <li>4-я вкладка</li>
   </ul>
   <div class="tabs__content active">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur delectus deleniti dicta expedita,
-    nam provident ullam. Expedita incidunt, officiis! Corporis dolores esse exercitationem neque quae, quia
-    quidem quisquam reiciendis soluta tempore velit voluptatum! Alias cumque, eos esse, exercitationem facilis
-    impedit labore magni optio provident quam recusandae sunt voluptas voluptate voluptatibus?
+    <form action="#" method="post">
+      <legend>Контактные данные</legend>
+      <br>
+      <p>
+        <label for="user_name">Имя:</label>
+        <input type="text" name="name" id="user_name" />
+      <div id="err_name">Ошибка, введите имя</div>
+      </p>
+      <p>
+        <label for="user_phone">Телефон:</label>
+        <input type="text" name="phone" id="user_phone" />
+      <div id="err_phone">Ошибка, введите телефон в формате +7(000)000-0000</div>
+      </p>
+      <p>
+        <label for="user_email">e-mail:</label>
+        <input type="text" name="email" id="user_email" />
+      <div id="err_email">Ошибка, введите email в формате mymail@mail.ru, или my.mail@mail.ru, или my-mail@mail.ru</div>
+      </p>
+      <p>
+        <label for="user_text">Текстовое поле:</label>
+        <textarea name="text" id="user_text" cols="30" rows="10"></textarea>
+      <div id="err_text">Ошибка, введите любые символы, кроме пробела</div>
+      </p>
+      <p>
+        <input type="submit" id="submit" value="Проверим?" />
+      </p>
+    </form>
   </div><!-- .tabs__content 1 блок-->
   <div class="tabs__content">
     Adipisci assumenda consequatur, cupiditate doloribus excepturi illum ipsum mollitia placeat recusandae
@@ -42,5 +65,6 @@
     cupiditate doloribus excepturi illum ipsum mollitia placeat recusandae sit sunt ut vero voluptate?
   </div><!-- .tabs__content 4 блок-->
 </div><!-- .tabs-->
+<script type="text/javascript" src="valid.js"></script>
 </body>
 </html>
