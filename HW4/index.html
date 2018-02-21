@@ -5,18 +5,19 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
+  <!--<script type="text/javascript" src="ajax.js"></script>-->
   <title>Tabs</title>
 </head>
 <body>
 <div class="tabs">
   <ul class="tabs__caption">
-    <li class="active">1-я вкладка</li>
+    <li class="active">Контакты</li>
     <li>2-я вкладка</li>
     <li>3-я вкладка</li>
     <li>4-я вкладка</li>
   </ul>
   <div class="tabs__content active">
-    <form action="#" method="post">
+    <form action="#" method="post" id="form">
       <legend>Контактные данные</legend>
       <br>
       <p>
@@ -34,13 +35,17 @@
         <input type="text" name="email" id="user_email" />
       <div id="err_email">Ошибка, введите email в формате mymail@mail.ru, или my.mail@mail.ru, или my-mail@mail.ru</div>
       </p>
+      <div>
+        <label for="city" class="label">Город:</label>
+        <input name="city" type="text" id="city">
+      </div>
       <p>
         <label for="user_text">Текстовое поле:</label>
         <textarea name="text" id="user_text" cols="30" rows="10"></textarea>
       <div id="err_text">Ошибка, введите любые символы, кроме пробела</div>
       </p>
       <p>
-        <input type="submit" id="submit" value="Проверим?" />
+        <input type="button" id="submit" value="Отправить" />
       </p>
     </form>
   </div><!-- .tabs__content 1 блок-->

@@ -83,7 +83,7 @@ input[type="text"]:focus {
     outline: none;
 }
 
-input[type="submit"] {
+input[type="button"] {
     display: block;
     margin-top: 0.5em;
 }
@@ -101,7 +101,7 @@ textarea:focus {
     box-shadow: 0 0 5px rgba(50, 200, 255, 0.5);
     outline: none;
 }
-input[type="submit"] {
+input[type="button"] {
     display: block;
     margin-top: 1em;
     padding: 5px 15px;
