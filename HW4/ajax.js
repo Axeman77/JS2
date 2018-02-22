@@ -7,13 +7,14 @@
 
             $.post('http://api.spacenear.ru/index.php', {pattern: value}, function(data) {
                try {
-                    var result = JSON.parse(data);
+                    var result = JSON.parse(data); // записываем распарсенные данные в переменную
 
                     if (result.length > 0) {
-                      $('#city-list').addClass('active');
+                      $('#city-list').addClass('active'); // берем блок и присваиваем класс
                       for (var i = 0; i < result.length; i++) {
                         var city = $('<div>').addClass('list').append(result[i]['name']);
-                        $('#city-list').append(city);
+                        // создаем див добавляем класс и вставляем имя из пременной
+                        $('#city-list').append(city); //  вставляем созданый блок
                       }
                     }
                   } catch(err) {
@@ -26,14 +27,14 @@
         // выбор города из списка городов по клику мыши
 
         $('#form').on('click', '#city-list', function(event) {
-          var cityName = $(this).text();
+          var cityName = $(this).text(); // берм текст из блока
 
 
           if (cityName.length > 0) {
-              $('#city').val(cityName);
+              $('#city').val(cityName); // вставляем в инпут
             }
 
-            $('#city-list').empty().removeClass('active');
+            $('#city-list').empty().removeClass('active'); // чистим инпут
         });
     }); // end ready
 })(jQuery);
