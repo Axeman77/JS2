@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="ajax.js"></script>
+  <title>Tabs</title>
+</head>
+<body>
+<div class="tabs">
+  <ul class="tabs__caption">
+    <li class="active">Контакты</li>
+    <li>2-я вкладка</li>
+    <li>3-я вкладка</li>
+    <li>4-я вкладка</li>
+  </ul>
+  <div class="tabs__content active">
+    <form action="#" method="post" id="form">
+      <legend>Контактные данные</legend>
+      <br>
+      <p>
+        <label for="user_name">Имя:</label>
+        <input type="text" name="name" id="user_name" />
+      <div id="err_name">Ошибка, введите имя</div>
+      </p>
+      <p>
+        <label for="user_phone">Телефон:</label>
+        <input type="text" name="phone" id="user_phone" />
+      <div id="err_phone">Ошибка, введите телефон в формате +7(000)000-0000</div>
+      </p>
+      <p>
+        <label for="user_email">e-mail:</label>
+        <input type="text" name="email" id="user_email" />
+      <div id="err_email">Ошибка, введите email в формате mymail@mail.ru, или my.mail@mail.ru, или my-mail@mail.ru</div>
+      </p>
+      <div>
+        <label for="city" class="label">Город:</label>
+        <input name="city" type="text" id="city">
+        <div id="city-list"></div>
+      </div>
+      <p>
+        <label for="user_text">Текстовое поле:</label>
+        <textarea name="text" id="user_text" cols="30" rows="10"></textarea>
+      <div id="err_text">Ошибка, введите любые символы, кроме пробела</div>
+      </p>
+      <p>
+        <input type="button" id="submit" value="Отправить" />
+      </p>
+    </form>
+  </div><!-- .tabs__content 1 блок-->
+  <div class="tabs__content">
+    Adipisci assumenda consequatur, cupiditate doloribus excepturi illum ipsum mollitia placeat recusandae
+    sit sunt ut vero voluptate? Alias asperiores, aspernatur assumenda autem beatae consequatur cum delectus
+    dignissimos doloremque dolores eligendi error eum eveniet ex excepturi facilis fuga fugiat hic illum itaque
+    laboriosam libero molestiae molestias necessitatibus nemo nisi nulla pariatur quae quam, quia repellat repudiandae
+    suscipit tempora, tempore tenetur totam veritatis! Ad adipisci blanditiis consectetur dicta ea magnam molestiae
+    quae rem sequi! Amet animi cum ex fugit, ipsam magni nemo provident quae quibusdam quo. Dolore doloremque earum
+    fugiat maiores maxime nihil tempora temporibus, voluptate? Aliquid dignissimos eligendi est ex excepturi officia
+    omnis praesentium rerum sunt voluptate! Accusamus accusantium architecto corporis cum deleniti doloremque facere
+    fuga iste magnam molestiae nihil nostrum odio placeat, temporibus ullam unde voluptatem? Aliquid amet beatae
+    consectetur, consequatur dolore est facere, incidunt itaque modi nihil pariatur quod temporibus voluptatibus?
+  </div><!-- .tabs__content 2 блок-->
+  <div class="tabs__content">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  </div><!-- .tabs__content 3 блок-->
+  <div class="tabs__content">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eaque, esse harum id iure libero,
+    magnam placeat quae quam ratione recusandae sed vel! Dignissimos ex id unde. Adipisci assumenda consequatur,
+    cupiditate doloribus excepturi illum ipsum mollitia placeat recusandae sit sunt ut vero voluptate?
+  </div><!-- .tabs__content 4 блок-->
+</div><!-- .tabs-->
+<script type="text/javascript" src="valid.js"></script>
+</body>
+</html>
