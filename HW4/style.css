@@ -144,3 +144,17 @@ input.red {
     display: none;
     font-size: 0.7em;
 }
+
+#city-list {
+width: 350px;
+margin-top: 5px;
+background-color: #f5f5f5;
+}
+
+.list {
+	width: 100%;
+	margin: 3px 0;
+	background-color: white;
+	color: black;
+	padding-left: 15px;
+}
