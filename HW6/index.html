@@ -2,9 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="ajax.js"></script>
+  <script type="text/javascript" src="jqui.js"></script>
+  <title>HW6</title>
 </head>
 <body>
-
+<form action="#" method="post" id="form">
+  <legend>Контактные данные</legend>
+  <br>
+  <p>
+    <label for="user_name">Имя:</label>
+    <input type="text" name="name" id="user_name" />
+  <div id="err_name">Ошибка, введите имя</div>
+  </p>
+  <p>
+    <label for="user_phone">Телефон:</label>
+    <input type="text" name="phone" id="user_phone" />
+  <div id="err_phone">Ошибка, введите телефон в формате +7(000)000-0000</div>
+  </p>
+  <p>
+    <label for="user_email">e-mail:</label>
+    <input type="text" name="email" id="user_email" />
+  <div id="err_email">Ошибка, введите email в формате mymail@mail.ru, или my.mail@mail.ru, или my-mail@mail.ru</div>
+  </p>
+  <div>
+    <label for="city" class="label">Город:</label>
+    <input name="city" type="text" id="city">
+    <div id="city-list"></div>
+  </div>
+  <div>
+    <label for="dob">Дата рождения:</label>
+    <input name="birthdate" type="text" id="dob">
+  </div>
+  <p>
+    <label for="user_text">Текстовое поле:</label>
+    <textarea name="text" id="user_text" cols="30" rows="10"></textarea>
+  <div id="err_text">Ошибка, введите любые символы, кроме пробела</div>
+  </p>
+  <p>
+    <input type="submit" id="submit" value="Отправить" />
+  </p>
+ </form>
+<script type="text/javascript" src="val.js"></script>
 </body>
 </html>
