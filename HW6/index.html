@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="ajax.js"></script>
+  <script type="text/javascript" src="jqui.js"></script>
+  <script type="text/javascript" src="slider.js"></script>
+  <title>HW6</title>
+</head>
+<body>
+<div class="wrap">
+<div class="carousel-arrow-left"><span>Влево</span></div>
+<div class="carousel-hider">
+  <ul class="carousel-list">
+    <li class="carousel-element"><img src="img/muzhskie-naruchnie-chasi-casio-collection-a-168wa-1-silver-0_450x450.jpg" height="450"
+         width="450"/><p>Описание 1</p></li>
+    <li class="carousel-element"><img src="img/muzhskie-naruchnie-chasi-casio-g-shock-g-lide-gwx-5600wb-5e-surf-style-pack-brown-wood-0_450x450.jpg"
+        height="450" width="450"/><p>Описание 2</p></li>
+    <li class="carousel-element"><img src="img/muzhskie-naruchnie-chasi-casio-g-shock-ga-110mb-1a-black-amber-0_450x450.jpg" height="450"
+         width="450"/><p>Описание 3</p></li>
+    <li class="carousel-element"><img src="img/muzhskie-naruchnie-chasi-casio-g-shock-ga-110tx-7a-white-2_450x450.jpg" height="450"
+         width="450"/><p>Описание 4</p></li>
+    <li class="carousel-element"><img src="img/muzhskie-naruchnie-chasi-casio-g-shock-gls-5600cl-1e-blue-green-0_450x450.jpg" height="450"
+         width="450"/><p>Описание 5</p></li>
+    <li class="carousel-element"><img src="img/muzhskie-naruchnie-chasi-casio-g-shock-no-comply-ga-710gb-1altd-black-gold-02-1_450x450.jpg"
+         height="450" width="450"/><p>Описание 6</p></li>
+    <li class="carousel-element"><img src="img/muzhskie-naruchnye-chasy-casio-g-shock-dw-5600bb-1er-black-black-1-1_450x450.jpg" height="450"
+         width="450"/><p>Описание 7</p></li>
+  </ul>
+</div>
+<div class="carousel-arrow-right"><span>Вправо</span></div>
+</div>
+<div class="clear"></div>
+<form action="#" method="post" id="form">
+  <legend>Контактные данные</legend>
+  <br>
+  <p>
+    <label for="user_name">Имя:</label>
+    <input type="text" name="name" id="user_name" />
+  <div id="err_name">Ошибка, введите имя</div>
+  </p>
+  <p>
+    <label for="user_phone">Телефон:</label>
+    <input type="text" name="phone" id="user_phone" />
+  <div id="err_phone">Ошибка, введите телефон в формате +7(000)000-0000</div>
+  </p>
+  <p>
+    <label for="user_email">e-mail:</label>
+    <input type="text" name="email" id="user_email" />
+  <div id="err_email">Ошибка, введите email в формате mymail@mail.ru, или my.mail@mail.ru, или my-mail@mail.ru</div>
+  </p>
+  <div>
+    <label for="city" class="label">Город:</label>
+    <input name="city" type="text" id="city">
+    <div id="city-list"></div>
+  </div>
+  <div>
+    <label for="dob">Дата рождения:</label>
+    <input name="birthdate" type="text" id="dob">
+  </div>
+  <p>
+    <label for="user_text">Текстовое поле:</label>
+    <textarea name="text" id="user_text" cols="30" rows="10"></textarea>
+  <div id="err_text">Ошибка, введите любые символы, кроме пробела</div>
+  </p>
+  <p>
+    <input type="submit" id="submit" value="Отправить" />
+  </p>
+ </form>
+<script type="text/javascript" src="val.js"></script>
+</body>
+</html>
